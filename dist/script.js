@@ -3,7 +3,7 @@ function application() {
     var local = [];
     var mediaLength = Media.length;
     for (i = 0; i < mediaLength; i++) {
-        var cardStructure = "<a class='movieContainer' href=#'" + Media[i] + "> <img class='img' src='" + Media[i].coverAncho + "'>" + "<p class='name'>"+ Media[i].name + "</p>"+"</a>";
+        var cardStructure = "<div class='item-start'> <a  href='#'> <img class='img' src='" + Media[i].coverAncho + "'> <p> " + Media[i].name + "</p></a></div>";
         local.push(cardStructure);
         console.log(local);
     }
